@@ -1,0 +1,10 @@
+{% extends "shared/_layout.html" %}
+{% block main_content %}
+
+
+
+{% for num in dividend_data %}
+  <div>{{ num['date'], num['open'] }}</div>
+{% endfor %}
+
+{% endblock %}
